@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup/Login - SPEECHCAREHUB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>SPEECHCAREHUB</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <div class="form-container">
+            <div class="form-switch">
+                <button id="showLogin" class="active">Login</button>
+                <button id="showSignup">Signup</button>
+            </div>
+            
+            <form id="loginForm" class="form active">
+                <h2>Login</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="role">Role:</label>
+                <select id="role" name="role">
+                    <option value="therapist">Therapist</option>
+                    <option value="supervisor">Supervisor</option>
+                    <option value="patient">patient</option>
+                </select>
+                
+                <button type="submit">Login</button>
+            </form>
+
+            <form id="signupForm" class="form">
+                <h2>Signup</h2>
+                <label for="newUsername">Username:</label>
+                <input type="text" id="newUsername" name="newUsername" required>
+                
+                <label for="newPassword">Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+                
+                <label for="newRole">Role:</label>
+                <select id="newRole" name="newRole">
+                    <option value="therapist">Therapist</option>
+                    <option value="supervisor">Supervisor</option>
+                    <option value="patient">patient</option>
+                </select>
+                
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+    </section>
+    <script src="login.js"></script>
+    <footer>
+       
+        <p>&copy; Implimented by Debug Dynamos 2024 SPEECHCAREHUB. All rights reserved</p>
+    </footer> 
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    background-image: url(https://letstalkscience.ca/sites/default/files/2021-01/wireframe_chatbot.png);
+    background-repeat:round;
+}
+/* General Styles
+header {
+    background-color: #007bff;
+    height:20vh;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: -15px;
+}
+
+nav {
+   
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10;
+}
+
+nav li {
+    display: inline-flex;
+    color: #031121;
+    margin: 0 0.5rem;
+}
+
+nav a {
+    color: rgb(217, 201, 201);
+    text-decoration: none;
+    font-weight: bold;
+} */
+
+/* General header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+header .logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Navigation menu styling */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+    align-self: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for menu items */
+
+
+/* Mobile view - stack menu items vertically */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: left;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+        align-items: center;
+    }
+    
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/* Service Sections */
+.service-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: rgb(118, 205, 208);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+    padding: 25px;
+}
+
+.service-section h2 {
+    color: #555758;
+    margin-top: 0;
+}
+
+form {
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #824e4e;
+    border-radius: 4px;
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #222529;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #0e4a8a;
+    color:white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    form input, form select, form textarea {
+        width: calc(100% - 1rem);
+    }
+}
