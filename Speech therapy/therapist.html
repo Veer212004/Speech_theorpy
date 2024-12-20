@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapist Management - SPEECHCAREHUB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="therapy.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 style="color:white">SPEECHCAREHUB</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Therapist Dashboard</h2>
+        
+        <!-- Patient List Table -->
+        <h3>Patient List</h3>
+        <table id="patientList" border="1">
+            <thead>
+                <tr>
+                    <th>Patient Name</th>
+                    <th>Contact Information</th>
+                    <th>Therapy Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here dynamically -->
+            </tbody>
+        </table>
+    
+        <!-- Upcoming Sessions Table -->
+        <h3>Upcoming Sessions</h3>
+        <table id="upcomingSessions" border="1">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Session Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here dynamically -->
+            </tbody>
+        </table>
+    
+        <!-- Therapy Plan Creation -->
+        <h3>Create Therapy Plan</h3>
+        <form id="therapyPlanForm">
+            <label for="patientName">Patient Name:</label>
+            <input type="text" id="patientName" required><br><br>
+            <label for="therapyPlan">Therapy Plan:</label><br>
+            <textarea id="therapyPlan" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Create Plan">
+        </form>
+    
+        <!-- Add Upcoming Session -->
+        <h3>Add Upcoming Session</h3>
+        <form id="upcomingSessionForm">
+            <label for="sessionDate">Date:</label>
+            <input type="date" id="sessionDate" required><br><br>
+            <label for="sessionTime">Time:</label>
+            <input type="time" id="sessionTime" required><br><br>
+            <label for="sessionType">Session Type:</label>
+            <select id="sessionType" required>
+                <option value="In-Person">In-Person</option>
+                <option value="Virtual">Virtual</option>
+            </select><br><br>
+            <input type="submit" value="Add Session">
+        </form>
+    
+        <!-- Progress Tracking Form -->
+        <h3>Track Progress</h3>
+        <form id="progressTrackingForm">
+            <label for="progressPatientName">Patient Name:</label>
+            <input type="text" id="progressPatientName" required><br><br>
+            <label for="sessionsCompleted">Sessions Completed:</label>
+            <input type="number" id="sessionsCompleted" required><br><br>
+            <label for="progress">Progress:</label>
+            <input type="text" id="progress" required><br><br>
+            <input type="submit" value="Add Progress">
+        </form>
+    
+        <!-- Progress Tracking Table -->
+        <h3>Progress Tracking</h3>
+        <table id="progressTracking" border="1">
+            <thead>
+                <tr>
+                    <th>Patient Name</th>
+                    <th>Sessions Completed</th>
+                    <th>Progress</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here dynamically -->
+            </tbody>
+        </table>
+    
+        <!-- Session History Table -->
+        <h3>Session History</h3>
+        <table id="sessionHistory" border="1">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Session Details</th>
+                    <th>Therapist Feedback</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here dynamically -->
+            </tbody>
+        </table>
+    
+        <!-- Upload Files -->
+        <h3>Upload Files</h3>
+        <form id="fileUploadForm">
+            <input type="file" id="fileUpload" required>
+            <input type="submit" value="Upload">
+        </form>
+    
+        <!-- Alerts/Notifications -->
+        <h3>Alerts/Notifications</h3>
+        <div id="alerts">
+            <!-- Alerts will be shown here -->
+        </div>
+    
+        <!-- Resources Library -->
+        <h3>Resources Library</h3>
+        <div id="resources">
+            <!-- Resources links or content will be shown here -->
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; Implimented by Debug Dynamos 2024 SPEECHCAREHUB. All rights reserved</p>
+    </footer>
+    <script src="scriptt.js"></script>
+</body>
+</html>

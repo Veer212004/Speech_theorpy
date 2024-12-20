@@ -1,0 +1,92 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url(https://sandiegoslp.com/wp-content/uploads/2020/02/dashboard-1024x727.jpg);
+    background-size: cover;
+}
+
+
+section {
+    padding: 2rem;
+}
+
+h2, h3 {
+    color: hsl(0, 25%, 5%);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background: #f4f4f4;
+}
+
+form {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #a4a8a7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input[type="text"], 
+form textarea, 
+form input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background: #4d4c4c;
+    color: #d7cfcf;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3af243;
+    color:black;
+    border:2px solid black;
+}
+
+footer {
+    background: #333;
+    color: #fdf8f8;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}

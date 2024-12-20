@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discharge/Update Goals - SPEECHCAREHUB</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .back-to-services {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-services:hover {
+            background-color: #282b2e;
+            color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>SPEECHCAREHUB</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/dashboard.html">Dashboard</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div style="text-align: center;">
+        <a href="../services.html" class="back-to-services">Back to Services</a>
+    </div>
+    <section id="discharge-patient" class="service-details">
+        <h2>Discharge/Update Goals</h2>
+        <form id="dischargeForm" action="/dischargePatient" method="POST">
+            <label for="patientName">Patient Name:</label>
+            <input type="text" id="patientName" name="patientName" required><br><br>
+
+            <label for="goals">Updated Goals:</label>
+            <textarea id="goals" name="goals" required></textarea><br><br>
+
+            <input type="submit" value="Submit Update">
+        </form>
+    </section>
+
+    <script src="discharge-patient.js"></script>
+    <footer>
+        <p>&copy; 2024 Implemented by Debug Dynamos - SPEECHCAREHUB. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

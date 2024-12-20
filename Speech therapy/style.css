@@ -1,0 +1,379 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cta{
+    padding:5px;
+    border:2px solid black ; 
+    border-radius:10px;
+     background-color:rgba(207, 249, 249,0.225266523); 
+     color:black;
+     text-decoration:none;
+}
+.cta:hover{
+    background-color: #292424;
+    color:white;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    background-color: #efefef;
+    
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    height: 93px;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allows nav items to wrap on smaller screens */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px; /* Spacing between nav and search */
+    flex-wrap: wrap; /* Makes the menu responsive */
+}
+
+nav ul li {
+    margin: 0 15px;
+    border: solid 2px white;
+    border-radius: 10px;
+    background-color: rgba(251, 245, 237, 0.5);
+    padding: 10px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li:hover {
+    background-color: rgb(165, 151, 131);
+    border: 1px solid rgb(12, 6, 6);
+    box-shadow: 1px 1px 1px 0px black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Space between nav and search */
+}
+
+.search-container input {
+    padding: 10px;
+    border: none;
+    background-color: #ded2d2;
+    color: #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: 180px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: white;
+    color: #007bff;
+}
+
+/* Make the navbar responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        width: 100%; /* Take full width */
+        text-align: center;
+    }
+    
+    nav ul li {
+        margin-bottom: 10px; /* Space between stacked items */
+        width: 100%; /* Full width for each menu item */
+    }
+
+    .search-container {
+        margin-top: 10px; /* Space above search bar when wrapped */
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.2rem; /* Smaller logo text on mobile */
+    }
+
+    nav ul li {
+        padding: 8px;
+    }
+
+    .search-container input {
+        width: 150px; /* Smaller search bar on small screens */
+    }
+
+    .search-container button {
+        padding: 8px 15px; /* Smaller search button */
+    }
+}
+
+/* Additional styles for the rest of the page */
+
+/* Hero Section */
+.hero {
+    background: url(https://img.freepik.com/free-photo/young-woman-doing-speech-therapy-with-kids_23-2149110273.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(43, 25, 25);
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #100101;
+    border: 2px solid white;
+    background-color: rgba(251, 245, 237, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    background-color: #1b4572; /* Matches the blue background as requested */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows items to wrap when screen size is smaller */
+}
+
+.logo h1 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allows nav items to wrap on smaller screens */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px; /* Spacing between nav and search */
+    flex-wrap: wrap; /* Makes the menu responsive */
+}
+
+nav ul li {
+    margin: 0 15px;
+    border: solid 2px white;
+    border-radius: 10px;
+    background-color: rgba(251, 245, 237, 0.5);
+    padding: 10px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li:hover {
+    background-color: rgb(165, 151, 131);
+    border: 3px solid rgb(12, 6, 6);
+    box-shadow: 1px 1px 1px 0px black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Space between nav and search */
+}
+
+.search-container input {
+    padding: 10px;
+    border: none;
+    background-color: #eab9b9;
+    color: #141111;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 180px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(237, 186, 186);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: white;
+    color: #007bff;
+}
+
+/* Make the navbar responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        width: 100%; /* Take full width */
+        text-align: center;
+    }
+    
+    nav ul li {
+        margin-bottom: 10px; /* Space between stacked items */
+        width: 100%; /* Full width for each menu item */
+    }
+
+    .search-container {
+        margin-top: 10px; /* Space above search bar when wrapped */
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.2rem; /* Smaller logo text on mobile */
+    }
+
+    nav ul li {
+        padding: 8px;
+    }
+
+    .search-container input {
+        width: 150px; /* Smaller search bar on small screens */
+    }
+
+    .search-container button {
+        padding: 8px 15px; /* Smaller search button */
+    }
+}
+
+/* Additional styles for the rest of the page */
+
+/* Hero Section */
+.hero {
+    background: url(https://img.freepik.com/free-photo/young-woman-doing-speech-therapy-with-kids_23-2149110273.jpg) no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(43, 25, 25);
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #292424;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #100101;
+    border: 2px solid white;
+    background-color: rgba(251, 245, 237, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+/* New changes for responsive menu toggle */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    background-color: transparent;
+    border: none;
+    color: rgba(211, 229, 108,0.5);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show the toggle button on smaller screens */
+    }
+
+    nav ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: row;
+        width: 100%; /* Full width */
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex; /* Show the menu when active */
+    }
+
+    .search-container.active {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supervisor Dashboard - SPEECHCAREHUB</title>
+    <link rel="stylesheet" href="super.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 style="color:white">SPEECHCAREHUB</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Supervisor Dashboard</h2>
+        
+        <!-- Therapist Overview -->
+        <h3>Therapist Overview</h3>
+        <table id="therapistOverview" border="1">
+            <thead>
+                <tr>
+                    <th>Therapist Name</th>
+                    <th>Current Workload</th>
+                    <th>Assigned Patients</th>
+                    <th>Upcoming Therapy Sessions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here dynamically -->
+            </tbody>
+        </table>
+    
+        <!-- Review Therapy Plans -->
+        <h3>Review Therapy Plans</h3>
+        <div id="therapyPlanReview">
+            <!-- Notifications and review actions -->
+        </div>
+    
+        <!-- Session Monitoring -->
+        <h3>Session Monitoring</h3>
+        <div id="sessionMonitoring">
+            <!-- Real-time session tracking tool -->
+        </div>
+    
+        <!-- Performance Reports -->
+        <h3>Performance Reports</h3>
+        <table id="performanceReports" border="1">
+            <thead>
+                <tr>
+                    <th>Therapist Name</th>
+                    <th>Session Frequency</th>
+                    <th>Patient Outcomes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here dynamically -->
+            </tbody>
+        </table>
+    
+        <!-- Case Evaluation -->
+        <h3>Case Evaluation</h3>
+        <form id="caseEvaluationForm">
+            <label for="caseTherapistName">Therapist Name:</label>
+            <input type="text" id="caseTherapistName" required><br><br>
+            <label for="caseRating">Case Rating:</label>
+            <select id="caseRating" required>
+                <option value="Excellent">Excellent</option>
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Below Average">Below Average</option>
+                <option value="Poor">Poor</option>
+            </select><br><br>
+            <label for="caseComments">Comments:</label><br>
+            <textarea id="caseComments" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Submit Evaluation">
+        </form>
+    
+        <!-- Feedback Section -->
+        <h3>Feedback Section</h3>
+        <form id="feedbackForm">
+            <label for="feedbackTherapistName">Therapist Name:</label>
+            <input type="text" id="feedbackTherapistName" required><br><br>
+            <label for="feedbackMessage">Feedback Message:</label><br>
+            <textarea id="feedbackMessage" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Send Feedback">
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy;Implimented by Debug Dynamos 2024 SPEECHCAREHUB. All rights reserved.</p>
+    </footer>
+
+    <script src="super.js"></script>
+</body>
+</html>

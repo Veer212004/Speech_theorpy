@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPEECHCAREHUB - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/favicon-icon" href="favicon.ico">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>SPEECHCAREHUB</h1>
+        </div>
+        <nav>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button> <!-- Added the hamburger menu icon -->
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+            </ul>
+            <div class="search-container" id="search-container">
+                <input type="text" placeholder="Search" id="search-input" class="search-input">
+                <button class="search-btn" onclick="handleSearch()">Search</button>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h2>Welcome to SpeechCareHub</h2>
+        <p>Vision: "Transforming Speech-Language Therapy Services with Automation and Digital Tools"</p>
+        <a href="services.html" class="cta">Explore Services</a>
+    </section>
+
+    <footer>
+        <p>&copy; Implemented by Debug Dynamos 2024 SPEECHCAREHUB. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Menu Toggle and Search Functionality -->
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            var searchContainer = document.getElementById('search-container');
+            menu.classList.toggle('active');
+            searchContainer.classList.toggle('active'); // Toggle search visibility in mobile view
+        }
+
+        function handleSearch() {
+            var query = document.getElementById('search-input').value.toLowerCase().trim(); // Trim whitespaces and convert to lowercase
+            var pageMapping = {
+                'home': 'index.html',
+                'about': 'about.html',
+                'services': 'services.html',
+                'dashboard': 'dashboard.html',
+                'contact': 'contact.html',
+                'login': 'login.html',
+                'signup': 'login.html' // Redirect to login page for both "login" and "signup"
+            };
+
+            // Check if the query matches a key in the pageMapping object
+            if (pageMapping[query]) {
+                window.location.href = pageMapping[query]; // Redirect to the corresponding page
+            } else if (query === '') {
+                alert('Please enter a search term.');
+            } else {
+                alert('No matching page found for: ' + query); // Notify if no match is found
+            }
+        }
+    </script>
+</body>
+</html>
